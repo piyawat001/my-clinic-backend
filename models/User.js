@@ -1,18 +1,20 @@
+// models/User.js
 const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
-  firstName: {
+  lineUserId: {
     type: String,
-    required: true
-  },
-  lastName: {
-    type: String,
-    required: true
-  },
-  phone: {
-    type: String,
-    required: true,
     unique: true
+  },
+  displayName: String,
+  pictureUrl: String,
+  firstName: String,
+  lastName: String,
+  phone: String,
+  status: {
+    type: String,
+    enum: ['active', 'inactive'],
+    default: 'active'
   },
   createdAt: {
     type: Date,

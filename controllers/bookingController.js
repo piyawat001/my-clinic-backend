@@ -1,3 +1,4 @@
+//my-clinic-backend/controllers/bookingController.js
 const Booking = require('../models/Booking');
 
 // Create booking

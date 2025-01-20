@@ -1,3 +1,4 @@
+//my-clinic-backend/routes/bookingRoutes.js
 const express = require('express');
 const router = express.Router();
 const {
